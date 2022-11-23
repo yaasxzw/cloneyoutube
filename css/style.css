@@ -4,14 +4,50 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ddd;
+    background-color: #f9f9f9;
+    color: #222;
+    font-family: 'roboto',sans-serif;
 }
-header, section{
-    padding: 5rem;
- 
-}
+
 header{
-    background-color: #2196f3;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 2px solid #f2f2f2;
+
+    /*APLICANDO O GRID*/
+  display: grid;
+  grid-template-columns: auto auto;
+
+  justify-content: space-between;
+  align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+.logo img{
+    width: 100px;
+}
+.search input[type="search"]{
+    width: 400px;
+    padding: 0.5rem;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+.button{
+    padding: 0.25rem 1.5rem;
+    border: 1px solid #2c5fd5;
+    border-radius: 4px;
+    color: #2c5fd5;
+    font-weight: bold;
+}
+.subscribe .button{
+    border: none;
+    background-color: #fb2300;
+    color: #fff;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 main{
     /* max-width: 1200px; */
@@ -20,7 +56,7 @@ main{
     /* HABILITANDO O GRID */
     display: grid;
     /* ESPAÇO ENTRE CADA GRID */
-    /* grid-row-gap: 1rem; */
+    grid-row-gap: 1rem;
     /* HABILITA AS AREAS QUE SERÃO POSICIONADAS */
     grid-template-areas: 
     'video-player video-player'

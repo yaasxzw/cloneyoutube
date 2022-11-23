@@ -1,31 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link [x] css externo -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <!-- fonte google - roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- link da imagem na aba do navegador favicon -->
+    <link rel="stylesheet icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- titulo na aba do navegador -->
+    <title>clone do youtube</title>
 </head>
 <body>
-    <!-- CABEÇALHO DA PÁGINA -->
-    <header></header>
+    <!-- CABEÇALHO DA PAGINA -->
+    <header>
+        <div class="logo">
+          <img src="./assets/youtube.png" alt="imagem com logo do youtube">
+        </div>
+
+        <!-- buscar/pesquisar -->
+        <div class="search">
+            <input type="search" placeholder="Pesquisar">
+        </div>
+
+        <!-- fazer login -->
+        <div class="sign-in">
+            <a href="#" class="button">Fazer login</a>
+        </div>
+
+        
+    </header>
+
     <!-- CAIXA PRINCIPAL -->
     <main>
-        <!-- VÍDEO DA PÁGINA -->
-        <section class="video-player">video-player</section>
-        <!-- DESCRIÇÃO DO VÍDEO -->
-        <section class="video-info">video-info</section>
-        <!-- BOTÕES DE LIKE DESLIKE ETC. -->
+
+        <!-- VIDEO DA PAGINA -->
+        <section class="video-player">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uJky7GD0E10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+        
+        <!-- DESCRICAO DO VIDEO -->
+        <section class="video-info">
+            <h1>Orochi "SEREIA 🧜🏼‍♀️" feat. Ryan SP, Xamã, Oruam ( prod. NeoBeats, Kizzy )</h1>
+            <p>23.283.395 visualizações  </p>
+        </section>
+        <!-- BOTAO LIKE DESLIKE ETC. -->
         <section class="actions">actions</section>
-        <!-- INFO DO CANAL -->
+
+        <!-- INFORMAÇOES DO CANAL-->
         <section class="channel">channel</section>
-            <!-- BOTÃO INSCREVER -->
-                <section class="subscribe">subscribe</section>
-            <!-- ANÚCIOS -->
-            <section class="ad">ad</section>
-            <!-- VÍDEOS SURGERIDOS -->
-            <section class="up-next">up-next</section>
+
+        <!-- BOTAO INSCREVER-->
+        <section class="subscribe">subscribe</section>
+
+        <!-- ANUNCIOS -->
+        <section class="ad">ad</section>
+
+        <!-- VIDEOS SUGERIDOS -->
+        <section class="up-next">up-next</section>
     </main>
 </body>
 </html>
